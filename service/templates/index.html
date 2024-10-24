@@ -1,0 +1,12 @@
+{% extends 'template.html' %}
+{% block content %}
+        {% for post in posts %}
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-2 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h4 class="mb-0">{{ post.title }}</h4>
+                <div class="my-1 text-body-secondary">{{ post.date_posted }}</div>
+                <p class="card-text mb-auto">{{ post.content }}</p>
+            </div>
+        </div>
+        {% endfor %}
+{% endblock content %}
