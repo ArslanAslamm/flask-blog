@@ -1,6 +1,7 @@
 from flask import render_template, url_for, flash, redirect
-from main import app
+from index import app
 from main.forms import RegisterForm, LoginForm
+from main.models import User, Post
 
 posts = [
     {
